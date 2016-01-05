@@ -86,6 +86,7 @@ static NSString *cellName = @"indentifier";
     }
     
 }
+#pragma mark - cell的大小
 #pragma mark - 头视图
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
