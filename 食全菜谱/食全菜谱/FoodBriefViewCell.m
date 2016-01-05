@@ -33,11 +33,11 @@
 -(void)initView
 {
     //食材概述标签
-    self.briefLB1 = [[UILabel alloc]initWithFrame:CGRectMake(0,_topSpace, self.frame.size.width, _labelHeight)];
+    self.briefLB1 = [[UILabel alloc]initWithFrame:CGRectMake(_topSpace,_topSpace, self.frame.size.width, _labelHeight)];
     //背景颜色
     self.briefLB1.backgroundColor = [UIColor redColor];
     //标题
-    self.briefLB1.text = @"适宜搭配";
+    self.briefLB1.text = @"食材概述";
     //字体在哪里的格式
     self.briefLB1.textAlignment = NSTextAlignmentLeft;
     //添加到视图上面
@@ -49,20 +49,18 @@
     self.briefLB2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     //设置行数
     [self.briefLB2 setNumberOfLines:0];
-    NSString *string = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路口结束了快点放假数量的开发教";
+    NSString *string = @"人生总有遗憾，但选择之后遗憾到此为止。放下遗憾，面对现实，能改变就改变，不能改变就接受，顺其自然有时候是最好的方式。用最好的心态去面对人生，即使走得磕磕碰碰也会趣味横生，否则即使一路平坦也得不到快乐。";
     self.briefLB2.text = string;
-    UIFont *font = [UIFont systemFontOfSize:16];
+    UIFont *font = [UIFont systemFontOfSize:18];
     //限制宽度
     CGSize size = CGSizeMake(self.frame.size.width, 2000);
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil];
     //使该标签的高度随着字体的多少改变
     CGSize labelSize = [string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
     //设置frame
-    self.briefLB2.frame = CGRectMake(0, _horY, labelSize.width, labelSize.height);
+    self.briefLB2.frame = CGRectMake(_topSpace, _horY,self.frame.size.width, labelSize.height);
     //添加到视图上面
     [self addSubview:self.briefLB2];
-    //y坐标的改动
-    _horY +=self.briefLB2.frame.size.height;
 }
 
 @end

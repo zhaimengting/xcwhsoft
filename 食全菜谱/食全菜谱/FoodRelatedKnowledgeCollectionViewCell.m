@@ -49,9 +49,9 @@
     self.nutritionValueLB2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     //设置行数
     [self.nutritionValueLB2 setNumberOfLines:0];
-    NSString *string = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路";
+    NSString *string = @"人生总有遗憾，但选择之后遗憾到此为止。放下遗憾，面对现实，能改变就改变，不能改变就接受，顺其自然有时候是最好的方式。用最好的心态去面对人生，即使走得磕磕碰碰也会趣味横生，否则即使一路平坦也得不到快乐。";
     self.nutritionValueLB2.text = string;
-    UIFont *font = [UIFont systemFontOfSize:16];
+    UIFont *font = [UIFont systemFontOfSize:18];
     //限制宽度
     CGSize size = CGSizeMake(self.frame.size.width, 2000);
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil];
@@ -75,8 +75,8 @@
     
     //用料概述的标签
     self.useLB2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-    [self.useLB2 setNumberOfLines:0];
-    self.useLB2.text = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路口结束了快点放假数量的开发教";
+    [self.useLB2 setNumberOfLines:1000];
+    self.useLB2.text = @"人生总有遗憾，但选择之后遗憾到此为止。放下遗憾，面对现实，能改变就改变，不能改变就接受，顺其自然有时候是最好的方式。用最好的心态去面对人生，即使走得磕磕碰碰也会趣味横生，否则即使一路平坦也得不到快乐。";
     self.useLB2.frame = CGRectMake(0, _horY, labelSize.width, labelSize.height);
     [self addSubview:self.useLB2];
     
@@ -93,7 +93,7 @@
     
     self.makeLB2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     [self.makeLB2 setNumberOfLines:0];
-    self.makeLB2.text = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路口结束了快点放假数量的开发教";
+    self.makeLB2.text = @"人生总有遗憾，但选择之后遗憾到此为止。放下遗憾，面对现实，能改变就改变，不能改变就接受，顺其自然有时候是最好的方式。用最好的心态去面对人生，即使走得磕磕碰碰也会趣味横生，否则即使一路平坦也得不到快乐。";
     self.makeLB2.frame = CGRectMake(0, _horY, labelSize.width, labelSize.height);
     [self addSubview:self.makeLB2];
     

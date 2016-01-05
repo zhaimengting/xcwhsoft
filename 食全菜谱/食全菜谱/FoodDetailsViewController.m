@@ -60,7 +60,7 @@ static NSString *cellName = @"cell";
     [self.collectionView registerClass:[TopDetailReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"TopDetailReusableView"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellName];
     [self.collectionView registerClass:[BottomDetailCollectionViewCell class] forCellWithReuseIdentifier:@"BottomDetailCollectionViewCell"];
-    //[self.collectionView registerClass:[FoodBriefViewCell class] forCellWithReuseIdentifier:@"BottomDetailCollectionViewCell"];
+    [self.collectionView registerClass:[FoodBriefViewCell class] forCellWithReuseIdentifier:@"FoodBriefViewCell"];
     //头视图设置大小
     layOut.headerReferenceSize = CGSizeMake(XCW, 200);
 }
@@ -75,7 +75,7 @@ static NSString *cellName = @"cell";
     {
         return 10;
     }
-    return 1;
+    return 20;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -88,7 +88,7 @@ static NSString *cellName = @"cell";
     }
 //    }else if (_selectedIndex == 1)
 //    {
-//        FoodBriefViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BottomDetailCollectionViewCell" forIndexPath:indexPath];
+//        FoodBriefViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FoodBriefViewCell" forIndexPath:indexPath];
 //        return cell;
 //    }
     else
