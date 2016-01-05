@@ -22,6 +22,7 @@
         self.nameTitle = [[UILabel alloc]initWithFrame:CGRectMake(XCXFrom6(10), self.imgView.frame.size.height+XCYFrom6(5), self.frame.size.width, XCYFrom6(25))];
         //字体颜色
         self.nameTitle.textColor = [UIColor blackColor];
+        self.nameTitle.textAlignment = NSTextAlignmentCenter;
         //添加到视图上
         [self addSubview:self.nameTitle];
     }

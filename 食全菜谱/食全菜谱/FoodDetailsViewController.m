@@ -14,6 +14,8 @@
 #import "TopDetailReusableView.h"
 #import "BottomDetailCollectionViewCell.h"
 #import "FoodDetailMakeViewController.h"
+//导入食材概述
+#import "FoodBriefViewCell.h"
 
 @interface FoodDetailsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 //collectionView
@@ -58,6 +60,7 @@ static NSString *cellName = @"cell";
     [self.collectionView registerClass:[TopDetailReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"TopDetailReusableView"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellName];
     [self.collectionView registerClass:[BottomDetailCollectionViewCell class] forCellWithReuseIdentifier:@"BottomDetailCollectionViewCell"];
+    //[self.collectionView registerClass:[FoodBriefViewCell class] forCellWithReuseIdentifier:@"BottomDetailCollectionViewCell"];
     //头视图设置大小
     layOut.headerReferenceSize = CGSizeMake(XCW, 200);
 }
@@ -83,6 +86,11 @@ static NSString *cellName = @"cell";
         cell.nameTitle.text = @"西兰花";
         return cell;
     }
+//    }else if (_selectedIndex == 1)
+//    {
+//        FoodBriefViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BottomDetailCollectionViewCell" forIndexPath:indexPath];
+//        return cell;
+//    }
     else
     {
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellName forIndexPath:indexPath];
@@ -109,7 +117,7 @@ static NSString *cellName = @"cell";
     if (_selectedIndex == 0)
     {
         FoodDetailMakeViewController *vc = [[FoodDetailMakeViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController pushViewController:vc animated:NO];
     }
     else
     {

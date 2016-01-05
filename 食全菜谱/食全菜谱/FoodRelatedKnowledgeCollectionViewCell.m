@@ -49,9 +49,9 @@
     self.nutritionValueLB2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     //设置行数
     [self.nutritionValueLB2 setNumberOfLines:0];
-    NSString *string = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路口结束了快点放假数量的开发教";
+    NSString *string = @"我看得见看上了飞机上来看附件是都是垃圾发生的离开建设的弗兰克教室里的开发就算了空间受到了开始觉得了多少空间了多少空间收到了会计师的离开建设的路口建设的路口附近受到了罚款手机登陆开始将对方实力的建设的路口建设的路";
     self.nutritionValueLB2.text = string;
-    UIFont *font = [UIFont systemFontOfSize:18];
+    UIFont *font = [UIFont systemFontOfSize:16];
     //限制宽度
     CGSize size = CGSizeMake(self.frame.size.width, 2000);
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil];

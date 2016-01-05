@@ -36,6 +36,7 @@ static NSString *cellName = @"indentifier";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     _topDetailViewHeight = XCYFrom6(230.0f);
     [self initView];
@@ -46,7 +47,7 @@ static NSString *cellName = @"indentifier";
     UICollectionViewFlowLayout *layOut = [[UICollectionViewFlowLayout alloc]init];
     //大小
     layOut.itemSize = CGSizeMake(XCW-2*XCXFrom6(10.0f), XCH+64);
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, XCW, XCH)collectionViewLayout:layOut];
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, XCW, XCH-104)collectionViewLayout:layOut];
     //设置代理
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;

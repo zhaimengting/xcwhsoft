@@ -45,7 +45,7 @@
 
 -(void)createImageViewWithNum:(NSInteger)index
 {
-    _buttonWidth =(self.frame.size.width-2*_horSpacing)/index;
+    _buttonWidth =(self.frame.size.width-2*_horSpacing)/4;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(_verSpacing, _horSpacing, _imageWidth,_imageHeight)];
     _beginY = imageView.frame.size.height - _buttonHeight+_verSpacing;
     imageView.image = [UIImage imageNamed:@"u32.jpg"];
@@ -66,7 +66,6 @@
         [self loadButtonWithTitile:@"食材概述" rect:CGRectMake(_beginX,_beginY,_buttonWidth,_buttonHeight) WithNum:1];
         [self loadButtonWithTitile:@"营养功效" rect:CGRectMake(_beginX,_beginY,_buttonWidth,_buttonHeight) WithNum:2];
         [self loadButtonWithTitile:@"选购保存" rect:CGRectMake(_beginX, _beginY, _buttonWidth, _buttonHeight) WithNum:3];
-        [self loadButtonWithTitile:@"选购保存" rect:CGRectMake(_beginX, _beginY, _buttonWidth, _buttonHeight) WithNum:4];
     }
     
 }

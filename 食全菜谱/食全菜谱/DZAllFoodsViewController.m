@@ -46,9 +46,8 @@
     self.mainSeg.frame = CGRectMake(0, 0, 150, 32);
     self.mainSeg.selectedSegmentIndex = 0;
     [self selectVegetarianMaterial];
-    self.mainSeg.tintColor = RGB_MD(65, 159, 179);
-    //设置样式
-    self.mainSeg.segmentedControlStyle = UISegmentedControlStyleBar;
+    self.mainSeg.tintColor = [UIColor whiteColor];
+
     //设置在点击后是否恢复原样
     self.mainSeg.momentary = NO;
     //设置标题
@@ -88,7 +87,7 @@
     [self.view addSubview:self.vegetarianMaterialView];
     [self.vegetarianMaterialView setPushNextVC:^(UIViewController *vc)
      {
-         [weakS.navigationController pushViewController:vc animated:YES];
+         [weakS.navigationController pushViewController:vc animated:NO];
      }];
 }
 //选择荤材
