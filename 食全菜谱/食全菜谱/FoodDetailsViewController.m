@@ -79,24 +79,24 @@ static NSString *cellName = @"cell";
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_selectedIndex == 0)
-    {
+//    if (_selectedIndex == 0)
+//    {
         BottomDetailCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BottomDetailCollectionViewCell" forIndexPath:indexPath];
         cell.imgView.image = [UIImage imageNamed:@"u32.jpg"];
         cell.nameTitle.text = @"西兰花";
         return cell;
-    }
+//   // }
 //    }else if (_selectedIndex == 1)
 //    {
 //        FoodBriefViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FoodBriefViewCell" forIndexPath:indexPath];
 //        return cell;
 //    }
-    else
-    {
-        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellName forIndexPath:indexPath];
-        cell.backgroundColor = [UIColor redColor];
-        return cell;
-    }
+//    else
+//    {
+//        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellName forIndexPath:indexPath];
+//        cell.backgroundColor = [UIColor redColor];
+//        return cell;
+//    }
 }
 #pragma mark - 头视图
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -114,15 +114,15 @@ static NSString *cellName = @"cell";
 #pragma mark -cell的点击事件
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_selectedIndex == 0)
-    {
+//    if (_selectedIndex == 0)
+//    {
         FoodDetailMakeViewController *vc = [[FoodDetailMakeViewController alloc]init];
         [self.navigationController pushViewController:vc animated:NO];
-    }
-    else
-    {
-        NSLog(@"11111");
-    }
+//    }
+//    else
+//    {
+//        NSLog(@"11111");
+//    }
 }
 #pragma mark -setter
 -(void)setSelectedIndex:(NSInteger)selectedIndex
