@@ -50,24 +50,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Identifier];
     }
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont systemFontOfSize:20.0f];
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     
-    if (indexPath.row == 0) {
+    if (indexPath.row == 1) {
         cell.textLabel.text = @"清除缓存";
-    } else if (indexPath.row == 1) {
-        cell.textLabel.text = @"给我评分";
     } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"关于我们";
+        cell.textLabel.text = @"给我评分";
     } else if (indexPath.row == 3) {
-        cell.textLabel.text = @"";
-    } else if (indexPath.row == 4) {
-        cell.textLabel.text = @"消息中心";
-    } else if (indexPath.row == 5) {
-        cell.textLabel.text = @"设置";
+        cell.textLabel.text = @"关于我们";
     }
+    
     return cell;
 }
 
@@ -88,7 +84,14 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
-    view.backgroundColor = [UIColor clearColor];
+    //view.backgroundColor = [UIColor redColor];
+    UIImageView *logImageView = [[UIImageView alloc] initWithFrame:CGRectMake(80, 60, 110, 110)];
+    logImageView.layer.cornerRadius = 12.0;
+    //logImageView.backgroundColor = [UIColor orangeColor];
+    logImageView.image = [UIImage imageNamed:@"log"];
+    
+    
+    [view addSubview:logImageView];
     return view;
 }
 @end
