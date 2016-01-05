@@ -320,7 +320,6 @@
 		8CF435551C2A7E790039CFC5 /* 食全菜谱 */ = {
 			isa = PBXGroup;
 			children = (
-				145751051C3B9EA300EC099E /* DZALLFoodsViewController */,
 				8CF3F92C1C3500E1009F3D6F /* LeftSlideViewController */,
 				8CF435591C2A7E790039CFC5 /* AppDelegate.h */,
 				8CF4355A1C2A7E790039CFC5 /* AppDelegate.m */,
@@ -331,6 +330,7 @@
 				8CF4358C1C2A7F000039CFC5 /* DZTabBarController.h */,
 				8CF4358D1C2A7F000039CFC5 /* DZTabBarController.m */,
 				8CF4359E1C2A8E930039CFC5 /* DZRecommendViewController */,
+				145751051C3B9EA300EC099E /* DZALLFoodsViewController */,
 				8CF435A01C2A8F150039CFC5 /* DZThrepyViewController */,
 				8CF456C41C2B8DB600A5DECC /* Vendor */,
 				8CF3F93B1C352D9B009F3D6F /* images.xcassets */,

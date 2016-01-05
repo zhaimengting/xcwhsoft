@@ -85,7 +85,7 @@
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.bounds.size.width, 180)];
     //view.backgroundColor = [UIColor redColor];
-    UIImageView *logImageView = [[UIImageView alloc] initWithFrame:CGRectMake(80, 60, 110, 110)];
+    UIImageView *logImageView = [[UIImageView alloc] initWithFrame:CGRectMake(90, 60, 110, 110)];
     logImageView.layer.cornerRadius = 12.0;
     //logImageView.backgroundColor = [UIColor orangeColor];
     logImageView.image = [UIImage imageNamed:@"log"];
